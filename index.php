@@ -7,8 +7,8 @@ require_once './layout/header.php';
 <!--Slide----------------------------------------->
         <section id="Slide">
             <div class="aspect-ratio-169">
-                <img src="https://web4s.vn/uploads/tiny_uploads/Nhung/nuoc-hoa.jpg">
-                <img src="https://toplist.vn/images/800px/gia-ca-1003991.jpg">
+                <img src="img/slide1.jpg">
+                <img src="img/slide2.jpg">   
             </div>
             <div class="dot-container">
                 <div class="dot active"></div>
