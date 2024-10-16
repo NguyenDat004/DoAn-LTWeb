@@ -1,0 +1,172 @@
+/* Đặt lại kiểu mặc định và tạo kiểu cho toàn bộ trang */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Header */
+.header {
+    background-color: #007bff; /* Màu nền của header */
+    color: #fff;
+    padding: 15px 0;
+    border-bottom: 4px solid #0056b3; /* Đường viền dưới header */
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header .nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header .nav ul li {
+    margin-left: 20px;
+}
+
+.header .nav ul li:first-child {
+    margin-left: 0;
+}
+
+.header .nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.header .nav a:hover {
+    color: #cce5ff; /* Màu khi di chuột qua */
+}
+
+/* Nội dung chính */
+.main-content {
+    padding: 20px;
+    background-color: #fff; /* Nền của nội dung chính */
+    border-radius: 8px; /* Bo tròn các góc */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng nhẹ */
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.main-content .container {
+    padding: 0 20px;
+}
+
+.main-content h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.main-content p {
+    font-size: 16px;
+    color: #666;
+}
+/* Đặt kiểu cho tất cả các phần tử input */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 15px; /* Khoảng cách giữa các trường nhập liệu */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Đặt kiểu cho các phần tử input khi có lỗi hoặc khi người dùng tương tác */
+input:focus,
+textarea:focus {
+    border-color: #007bff; /* Màu viền khi input được chọn */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Hiệu ứng bóng nhẹ khi focus */
+    outline: none; /* Loại bỏ viền mặc định khi focus */
+}
+
+/* Đặt kiểu cho button */
+button {
+    background-color: #007bff; /* Màu nền của nút */
+    color: #fff; /* Màu chữ trên nút */
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Đặt kiểu cho button khi hover hoặc focus */
+button:hover,
+button:focus {
+    background-color: #0056b3; /* Màu nền khi di chuột qua */
+    transform: scale(1.02); /* Tạo hiệu ứng phóng to nhẹ */
+}
+
+/* Đặt kiểu cho button bị vô hiệu hóa */
+button:disabled {
+    background-color: #ccc; /* Màu nền khi nút bị vô hiệu hóa */
+    color: #666; /* Màu chữ khi nút bị vô hiệu hóa */
+    cursor: not-allowed; /* Con trỏ khi di chuột qua nút bị vô hiệu hóa */
+    box-shadow: none; /* Loại bỏ hiệu ứng bóng khi nút bị vô hiệu hóa */
+}
+/* Đặt kiểu cho bảng */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Loại bỏ khoảng cách giữa các viền của các ô */
+    margin-bottom: 20px; /* Khoảng cách phía dưới bảng */
+    background-color: #fff; /* Màu nền của bảng */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng nhẹ */
+    border-radius: 4px; /* Bo tròn các góc của bảng */
+}
+
+/* Đặt kiểu cho các tiêu đề của bảng */
+th {
+    background-color: #007bff; /* Màu nền của tiêu đề bảng */
+    color: #fff; /* Màu chữ của tiêu đề bảng */
+    padding: 12px;
+    text-align: left; /* Căn trái nội dung của tiêu đề */
+    font-weight: bold; /* Làm cho chữ đậm hơn */
+    border-bottom: 2px solid #0056b3; /* Đường viền dưới tiêu đề bảng */
+}
+
+/* Đặt kiểu cho các ô trong bảng */
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd; /* Đường viền dưới ô */
+    text-align: left; /* Căn trái nội dung của ô */
+}
+
+/* Đặt kiểu cho các hàng trong bảng khi di chuột qua */
+tr:hover {
+    background-color: #f5f5f5; /* Màu nền khi di chuột qua hàng */
+}
+
+/* Đặt kiểu cho hàng cuối cùng trong bảng */
+tr:last-child td {
+    border-bottom: none; /* Loại bỏ đường viền dưới của hàng cuối cùng */
+}
