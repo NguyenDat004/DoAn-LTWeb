@@ -73,7 +73,7 @@ imgPosition.forEach(function(image, index)
 function imgSlide()
 {
     index++;
-    console.log(index)
+    
     if(index>=imgNumber)
     {index=0;}
     Slide(index);
@@ -82,10 +82,10 @@ function imgSlide()
 function Slide(index)
 {
    imgContainer.style.left = "-" + index*100 + "%";
-   const doActive = document.querySelector('.click');
-   doActive.classList.romove("click");
+   const doActive = document.querySelector('.active');
+   doActive.classList.remove("active");
    //này ấn vào nó hiện trang kế bên 
-   dotItem[index].classList.add("click");
+   dotItem[index].classList.add("active");
 }
 
 setInterval(imgSlide,5000);

@@ -8,10 +8,16 @@ require_once './layout/header.php';
         <section id="Slide">
             <div class="aspect-ratio-169">
                 <img src="img/slide1.jpg">
-                <img src="img/slide2.jpg">   
+                <img src="img/slide2.jpg">  
+                <img src="img/slide2.jpg">  
+                <img src="img/slide2.jpg">  
+                <img src="img/slide2.jpg">  
             </div>
             <div class="dot-container">
                 <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
                 <div class="dot"></div>
             </div>
         </section>

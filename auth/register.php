@@ -20,7 +20,7 @@ require_once '../layout/header.php';
             $_SESSION['username'] = $username;
            
             $DB->query("INSERT INTO `account`(`username`, `password`, `rule`) VALUES ('{$username}','{$password}','user')");
-            die('<script>alert("Đăng ký thành công"); window.location.href="/";</script>');
+            die('<script>alert("Đăng ký thành công"); window.location.href="/htdocts/index.php";</script>');
         }
     }
     

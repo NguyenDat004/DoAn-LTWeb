@@ -77,7 +77,7 @@ if (isset($_GET['delete'])) {
                             <td><img src="<?= $row['images']; ?>" alt=""></td>
                             <td><p><?= $row['name']; ?></p></td>
                             <td><input type="text" value="<?= $row['amount']; ?>" name="amount" disabled></td>
-                            <td><p><?= number_format($row['price']); ?><sub>đ</sub></p></td>
+                            <td><p><?= number_format($row['price']); ?><sup>đ</sup></p></td>
                             <td><a href="?delete=<?=$row['id']; ?>">X</a></td>
                         </tr>
                         <?php }
@@ -100,11 +100,11 @@ if (isset($_GET['delete'])) {
                         </tr>
                         <tr>
                             <td>TỔNG TIỀN HÀNG:</td>
-                            <td><p><?= number_format($total_money); ?><sub>đ</sub></p></td>
+                            <td><p><?= number_format($total_money); ?><sup>đ</sup></p></td>
                         </tr>
                         <tr>
                             <td>TẠM TÍNH: </td>
-                            <td><p style="color: black; font-weight: bold;"><?= number_format($total_money); ?><sub>đ</sub></p></td>
+                            <td><p style="color: black; font-weight: bold;"><?= number_format($total_money); ?><sup>đ</sup></p></td>
                         </tr>
                     </table>
                     <div class="cart-content-right-text">
@@ -112,13 +112,10 @@ if (isset($_GET['delete'])) {
                                     
                     </div>
                     <div class="cart-content-right-button">
-                        <a href="/htdocts/index.php"><button>TIẾP TỤC MUA SẮM</button></a>
+                        <button><a href="/htdocts" style="tex">TIẾP TỤC MUA SẮM</a></button>
                         <button type="submit" name="pay">THANH TOÁN</button>
                     </div>
-                    <div class="cart-content-right-dangnhap">
-                        <p>TÀI KHOẢN IVY</p>
-                        <p>Hãy <a href=" ">đăng nhập</a> tài khoản của bạn để tích điểm thành viên</p>
-                    </div>
+                    
                 </div>
             </div>
                                 </form>

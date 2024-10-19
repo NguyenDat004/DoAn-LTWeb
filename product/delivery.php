@@ -99,7 +99,7 @@ if (isset($_POST['pay'])) {
                     </div>
 
                     <div class="delivery-content-left-button row">
-                        <a href=""> <span>&#171;</span> <p>Quay lại giỏ hàng</p> </a>
+                        <a href="/htdocts/product/cart.php"> <span>&#171;</span> <p>Quay lại giỏ hàng</p> </a>
                         <button type="submit" name="pay"> <p style="font-weight: bold;">THANH TOÁN VÀ GIAO HÀNG</p> </button>
                     </div>
                 </div>

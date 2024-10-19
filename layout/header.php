@@ -11,33 +11,33 @@
     <body>
         
         <section>
-            <div class="container">
+            <div class="container_header">
                 <div class="row">
                     <div class="top-logo">
-                       <a href="/htdocts/index.php"> <img src="https://pubcdn.ivymoda.com/ivy2/images/logo.png" alt="" > </a>
+                       <a href="/htdocts/index.php"> <img src="" alt="" > </a>
                     </div>
                     <div class="top-menu-items">
                         <ul>
                             <li>Sản phẩm
                                 <ul class="top-menu-item">
                                     <?php
-                                $query = mysqli_query($conn,"SELECT * FROM `sub_category` ORDER BY id ASC");
-                                $stt = 0;
-                                while($row = mysqli_fetch_array($query)){
-                                ?>
-                        <li>
-                        <a href="/htdocts/product/nuoc-hoa.php?type=<?= $row['code']; ?>"><?= $row['name']; ?></a>
-                        </li>          
-                        <?php
-                      }
-                      ?>
+                                        $query = mysqli_query($conn,"SELECT * FROM `sub_category` ORDER BY id ASC");
+                                        $stt = 0;
+                                        while($row = mysqli_fetch_array($query)){
+                                        ?>
+                                        <li>
+                                        <a href="/htdocts/product/nuoc-hoa.php?type=<?= $row['code']; ?>"><?= $row['name']; ?></a>
+                                        </li>          
+                                    <?php
+                                    }
+                                    ?>
                                 </ul>
                           
-                            <li><a href="//zalo.me/<?= $info['phone']; ?>" style="color: black;">Liên hệ</a></li>
-        <?php
+                            <li class="text-menu"><a href="//zalo.me/<?= $info['phone']; ?>" style="color: black;">Liên hệ</a></li>
+                            <?php
                                if($users['rule'] == 'admin') {
                              ?>
-                            <li><a href="/htdocts/admin/index.php" style="color: black;">Admin Control</a></li>
+                            <li class="text-menu"><a href="/htdocts/admin/index.php" style="color: black;">Admin Control</a></li>
 
                             <?php }  ?>
                         </ul>
@@ -49,13 +49,13 @@
                                 <i class="fas fa-search"></i>
                             </li>
                             <li>
-                            <a href="/htdocts/auth/login.php"><i class="fas fa-user-secret"></i></a>
+                            <a href="/htdocts/auth/login.php"><i class="fas fa-user-secret" title="login"></i></a>
                             </li>
                             <li>
-                                <a href="/htdocts/product/cart.php"><i class="fas fa-shopping-cart"></i></a>
+                                <a href="/htdocts/product/cart.php"><i class="fas fa-shopping-cart" title="shop cart"></i></a>
                             </li>
                             <li>
-                                <a href="/htdocts/product/history.php"><i class="fas fa-inbox"></i></a>
+                                <a href="/htdocts/product/history.php"><i class="fas fa-inbox" title="order detail"></i></a>
                             </li>
                             <?php
                                if($username) {
@@ -64,10 +64,10 @@
                            <a href="/htdocts/auth/logout.php">Đăng xuất</a>
                             </li>
                             <?php } else { ?>
-                                <li>
+                                <li class="login">
                                 <a href="/htdocts/auth/login.php">Đăng nhập</a>
                                 </li>
-                                <?php } ?>
+                            <?php } ?>
                         </ul>
                     </div>
                 </div>

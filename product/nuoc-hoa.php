@@ -7,18 +7,18 @@ $nuochoa = mysqli_fetch_assoc(mysqli_query($conn,"SELECT * FROM `sub_category` W
 
   <!------------Cartegory--------------->
   <section class="cartegory">
-        <div class="container">
+        <div class="container_c">
             <div class="cartegory-top row">
-                <p>Trang chủ</p> 
+                <a href="../index.php"><p>Trang chủ</p></a>
                 <span>&#10230; </span> <!--&#10230 dấu suy ra nè -->
                 <p><?= $nuochoa['name']; ?> </p>
             </div>
         </div>
-        <div class="CONTAINER">
+        <div >
             <div class="row">        
-                    <div class="cartegory-right-top-item">
+                    <!-- <div class="cartegory-right-top-item">
                         <button><span>Bộ lọc</span> <i class="fas fa-sort-down"></i></button>
-                    </div>
+                    </div> -->
                     <div class="cartegory-right-content row">
 
                       

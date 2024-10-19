@@ -29,17 +29,15 @@
                 <li>
                     <a href="" class="fab fa-facebook"></a>
                     <a href="" class="fab fa-twitter"></a>
-                    <a href="" class="fab fa-youtube"></a>
+                    <a href="" class="fab fa-youtube" style="color:red;"></a>
                     
                 </li>
                 
             </div>
-                <div class="cty">  
-                    <p>Công ty cổ phần Phong chủ nhật: 03426893078
-                    <p>Địa chỉ đăng kí: Phước Sơn, Tuy Phước, Bình Định - 0243 205 2222</p>
-                    <p>Đặt hàng online:<span>03426893078 </span></p>
-                </p>
-                </div> 
+            <div class="cty">  
+                <p>Công ty cổ phần LUXURY PERFUME</p> 
+                <p>Địa chỉ: Phường A Quận B TP.Hồ CHÍ MINH</p>
+            </div>
         </footer>
     </body>
     <script src="/htdocts/assets/script.js"></script>
