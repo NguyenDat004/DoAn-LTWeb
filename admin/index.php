@@ -10,9 +10,7 @@ if(isset($_SESSION['username'])){ // check đăng nhập hay chưa
             <h2>Welcome to the Admin Dashboard</h2>
           
              <br>
-             <br>
-           
-           
+             <br>  
             <h2>Danh sách thành viên</h2>
             <table>
                 <thead>

@@ -120,12 +120,12 @@ if (isset($_POST['pay'])) {
                         <tr>
                             <td><?= $row['name']; ?></td>
                             <td><?= $row['amount']; ?></td>
-                            <td> <p><?= number_format($totalpr); ?> <sub>đ</sub></p> </td>
+                            <td> <p><?= number_format($totalpr); ?> <sup>đ</sup></p> </td>
                         </tr>
                         <?php } ?>
                         <tr>
-                            <td style="font-weight: bold;" colspan="3">Tổng tiền hàng</td>
-                            <td style="font-weight: bold;"> <p><?= number_format($total_money); ?> <sub>đ</sub></p> </td>
+                            <td style="font-weight: bold;" colspan="2">Tổng tiền hàng</td>
+                            <td style="font-weight: bold;"> <p><?= number_format($total_money); ?> <sup>đ</sup></p> </td>
                         </tr>
                     </table>
                 </div>
@@ -133,9 +133,7 @@ if (isset($_POST['pay'])) {
 </form>
         </div>
     </section>
-
-<!--Slide--------------------------------------->
-        <section id="Slide"></section>        
+        
 <!-----------------------app-------------------->
 <?php
 require_once '../layout/footer.php';

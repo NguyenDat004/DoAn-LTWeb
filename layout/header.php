@@ -33,7 +33,7 @@
                                     ?>
                                 </ul>
                           
-                            <li class="text-menu"><a href="//zalo.me/<?= $info['phone']; ?>" style="color: black;">Liên hệ</a></li>
+                            <li class="text-menu"><a href="//zalo.me/<?= $info['phone']; ?>" style="color: black;" target="_blank">Liên hệ</a></li>
                             <?php
                                if($users['rule'] == 'admin') {
                              ?>

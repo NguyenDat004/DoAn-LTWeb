@@ -108,22 +108,19 @@ if (isset($_GET['delete'])) {
                         </tr>
                     </table>
                     <div class="cart-content-right-text">
-                        <p>Bạn sẽ được miễn phí ship khi đơn hàng của bạn có tổng giá trị trên 2.000.000 đ</p>
+                        <p>Bạn sẽ được miễn phí ship cho tấc cả các đơn hàng.</p>
                                     
                     </div>
                     <div class="cart-content-right-button">
-                        <button><a href="/htdocts" style="tex">TIẾP TỤC MUA SẮM</a></button>
-                        <button type="submit" name="pay">THANH TOÁN</button>
-                    </div>
-                    
+                        <button class="btn-link"><a href="../index.php" >TIẾP TỤC MUA SẮM</a></button>
+                        <button class="btn-link1" type="submit"><a href="/htdocts/product/delivery.php">THANH TOÁN</a></button>
+                    </div>  
                 </div>
             </div>
-                                </form>
+          </form>
         </div>
     </section>
-
-<!--Slide--------------------------------------->
-        <section id="Slide"></section>        
+    
 <!-----------------------app-------------------->
 <?php
 require_once '../layout/footer.php';

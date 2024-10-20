@@ -71,9 +71,7 @@ require_once '../layout/header.php';
                                 </form>
         </div>
     </section>
-
-<!--Slide--------------------------------------->
-        <section id="Slide"></section>        
+     
 <!-----------------------app-------------------->
 <?php
 require_once '../layout/footer.php';

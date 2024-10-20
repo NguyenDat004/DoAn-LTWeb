@@ -16,15 +16,13 @@ if(isset($_POST['addcart'])) {
 <section class="product">
             <div class="container">
                 <div class="product-top row">
-                    <p>Trang chủ</p> 
+                   <a href="../index.php"><p>Trang chủ</p></a>
                     <span>&#10230; </span> 
                     <p><?= $check['name']; ?></p>
                 </div>
                 <div class="product-content row">
                     <!--Left gôm những cái ảnh to và ảnh nhỏ-->
-                    <div class="product-content-left row">
-
-                            <!--NHớ chèn ảnh-->
+                    <div class="product-content-left">
                         <div class="product-content-left-big-img">
                             <img src="<?= $check['images']; ?>" alt="">
                         </div>
@@ -36,7 +34,7 @@ if(isset($_POST['addcart'])) {
                             <h1><?= $check['name']; ?></h1>
                         </div>
                         <div class="product-content-right-product-price">
-                            <p style="color:red;"><?= number_format($check['price']); ?><sub>đ</sub></p>
+                            <p style="color:red;"><?= number_format($check['price']); ?><sup>đ</sup></p>
                         </div>
                       
                         <form method="POST" action="">
@@ -73,11 +71,11 @@ if(isset($_POST['addcart'])) {
                             <div class="product-content-right-buttom-content-big">
                                 <div class="product-content-right-buttom-content-title row">
                                     <div class="product-content-right-buttom-content-title-item chitiet">
-                                        <p>Chi tiết</p>
+                                        <p style="font-weight: bold;">Chi tiết</p>
                                     </div>
 
                                     <div class="product-content-right-buttom-content-title-item baoquan">
-                                        <p>Bảo quản</p>
+                                        <p style="font-weight: bold;">Bảo quản</p>
                                     </div>
 
                                 </div>
@@ -104,8 +102,7 @@ if(isset($_POST['addcart'])) {
             </div>      
         </section>
 
-<!--Slide--------------------------------------->
-        <section id="Slide"></section>        
+  
 <!-----------------------app-------------------->
 <?php
 require_once '../layout/footer.php';

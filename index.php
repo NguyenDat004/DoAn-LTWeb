@@ -4,7 +4,7 @@ require_once './core/config.php';
 require_once './layout/header.php';
 ?>
 
-<!--Slide----------------------------------------->
+<!--Slide--->
         <section id="Slide">
             <div class="aspect-ratio-169">
                 <img src="img/slide1.jpg">

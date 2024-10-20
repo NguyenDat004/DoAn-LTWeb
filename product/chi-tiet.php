@@ -53,12 +53,11 @@ $items_result = mysqli_query($conn, $items_query);
                 </div>
              
             </div>
-                                </form>
+            </form>
         </div>
     </section>
 
-<!--Slide--------------------------------------->
-        <section id="Slide"></section>        
+       
 <!-----------------------app-------------------->
 <?php
 require_once '../layout/footer.php';
