@@ -45,8 +45,13 @@
                     <div class="top-menu-icons">
                         <ul>
                             <li>
-                                <input placeholder="Tìm kiếm" type="text"> 
-                                <i class="fas fa-search"></i>
+                                <form action="/htdocts/product/tim_kiem.php?tukhoa" method="GET">
+                               
+                                    <input placeholder="Tìm kiếm" type="text" name="tukhoa"> 
+                                    <!-- <input type="submit" name="timkiem" value="TÌM KIẾM" style="cursor: pointer;"> -->
+                                     <i class="fa-solid fa-magnifying-glass search"></i>
+                                
+                                </form>
                             </li>
                             <li>
                             <a href="/htdocts/auth/login.php"><i class="fas fa-user-secret" title="login"></i></a>

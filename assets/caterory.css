@@ -194,6 +194,20 @@ button:hover {
   text-wrap: nowrap;
 }
 
+.top-menu-icons ul li:first-child .search {
+  position: absolute;
+  font-size: 18px;
+  right: 12px;
+  top:50%;
+  transform: translateY(-50%);
+  color: red;
+}
+
+.top-menu-icons ul i {
+  cursor: pointer;
+  font-size: 25px;
+  color: wheat;
+}
 .top-menu-icons ul li::before {
   content: "";
   display: block;
@@ -214,18 +228,6 @@ button:hover {
   background-color: transparent;
   border-bottom: 1px solid#333;
   padding: 0 0 4px 6px;
-  color: wheat;
-}
-
-.top-menu-icons ul li:first-child i {
-  position: absolute;
-  font-size: 18px;
-  right: 12px;
-}
-
-.top-menu-icons ul i {
-  cursor: pointer;
-  font-size: 25px;
   color: wheat;
 }
 
@@ -1003,31 +1005,6 @@ button:hover {
   font-weight: bold;
   font-size: 16px;
 }
-/* chú ý xóa */
-/* .delivery-content-left-dangnhap {
-  margin-top: 12px;
-}
-
-.delivery-content-left-dangnhap i {
-  font-size: 12px;
-  margin-right: 12px;
-}
-
-.delivery-content-left-khachle {
-  margin: 12px 0;
-}
-
-.delivery-content-left-khachle input {
-  margin-right: 12px;
-}
-
-.delivery-content-left-dangky {
-  margin-bottom: 30px;
-}
-
-.delivery-content-left-dangky input {
-  margin-right: 12px;
-} */
 
 .delivery-content-left-input-top {
   justify-content: space-between;
@@ -1045,13 +1022,19 @@ button:hover {
   padding-left: 6px;
   border-radius: 6px;
 }
-
+.delivery-content-left-button {
+  transition: all 0.3s;
+}
 .delivery-content-left-button p {
   display: inline-block;
   font-family: var(--main-text-font);
   font-size: 12px;
 }
-
+.delivery-content-left-button > a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  color: blue;
+}
 .delivery-content-left-button span {
   margin-right: 12px;
 }
