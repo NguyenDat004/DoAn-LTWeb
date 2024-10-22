@@ -51,16 +51,15 @@ if(isset($_POST['addcart'])) {
    <br>
                         <div class="product-content-right-product-icon">
                             <div class="product-content-right-product-icon-item">
-                                <i class="fas fa-phone-alt"></i> <p>Hotline</p>
-                                
+                                <i class="fas fa-phone-alt"></i> <p style="margin-left: 5px;"> Hotline</p> 
                             </div>
 
                             <div class="product-content-right-product-icon-item">
-                                <i class="fas fa-comments"></i> <p>Chat</p>
+                                <i class="fas fa-comments"></i> <p style="margin-left: 5px;"> Chat</p>
                             </div>
 
                             <div class="product-content-right-product-icon-item">
-                                <i class="fas fa-envelope"></i> <p>Mail</p>
+                                <i class="fas fa-envelope"></i> <p style="margin-left: 5px;"> Mail</p>
                             </div>
                         </div>
                         <div class="product-content-right-buttom">

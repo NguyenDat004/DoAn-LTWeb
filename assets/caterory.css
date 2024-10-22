@@ -188,21 +188,31 @@ button:hover {
   padding: 6px 12px;
   position: relative;
 }
-
+.top-menu-icons ul li:first-child {
+  position: relative;
+}
+.top-menu-icons ul li:first-child i {
+  font-size: 18px;
+  color: #fff;
+}
 .top-menu-icons ul li a {
   color: wheat;
   text-wrap: nowrap;
 }
 
-.top-menu-icons ul li:first-child .search {
+.top-menu-icons ul li:first-child button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: wheat;
   position: absolute;
-  font-size: 18px;
-  right: 12px;
-  top:50%;
+  top: 50%;
+  right: 0;
+  font-size: 20px;
   transform: translateY(-50%);
-  color: red;
 }
-
 .top-menu-icons ul i {
   cursor: pointer;
   font-size: 25px;
@@ -221,7 +231,9 @@ button:hover {
 .top-menu-icons ul li:last-child::before {
   display: none;
 }
-
+.top-menu-icons ul li:first-child input::placeholder {
+  color: wheat;
+}
 .top-menu-icons ul li:first-child input {
   width: 200px;
   border: none;
@@ -444,7 +456,7 @@ button:hover {
 
 .cartegory-right-content-item img {
   width: 100%;
-  height: 220px;
+  height: 300px;
 }
 .cartegory-right-content-item p {
   font-size: 15px;
@@ -521,10 +533,10 @@ button:hover {
 
 /*Chỉnh ảnh cỡ lớn*/
 .product-content-left-big-img {
-  width: 100%;
+  width: 80%;
   margin: 0 20px;
-  border: 2px solid black;
-  border-radius: 10px;
+  /* border: 2px solid black; */
+  /* border-radius: 10px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -642,7 +654,7 @@ button:hover {
 
 .product-content-right-product-icon-item i {
   font-size: 12px;
-  margin-right: 6px;
+  margin-right: 8px;
 }
 
 .product-content-right-buttom {

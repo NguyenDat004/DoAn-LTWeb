@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width-device-width, initial-scale=1.0">
-        <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <link href="/htdocts/assets/caterory.css" rel="stylesheet">
         <link rel="icon" href="<?php echo $info['icon']; ?>" type="image/x-icon" />
         <title><?php echo $info['title']; ?></title>
@@ -45,12 +45,10 @@
                     <div class="top-menu-icons">
                         <ul>
                             <li>
-                                <form action="/htdocts/product/tim_kiem.php?tukhoa" method="GET">
-                               
-                                    <input placeholder="Tìm kiếm" type="text" name="tukhoa"> 
-                                    <!-- <input type="submit" name="timkiem" value="TÌM KIẾM" style="cursor: pointer;"> -->
-                                     <i class="fa-solid fa-magnifying-glass search"></i>
-                                
+                                <form action="/htdocts/product/tim_kiem.php?tukhoa" method="GET">                              
+                                    <input placeholder="Tìm kiếm Sản Phẩm" type="text" name="tukhoa"> 
+                                    <!-- <input type="submit" name="timkiem" value="TÌM KIẾM" style="cursor: pointer;"-->
+                                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                                 </form>
                             </li>
                             <li>

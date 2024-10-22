@@ -11,7 +11,7 @@ $nuochoa = mysqli_fetch_assoc(mysqli_query($conn,"SELECT * FROM `sub_category` W
             <div class="cartegory-top row">
                 <a href="../index.php"><p>Trang chủ</p></a>
                 <span>&#10230; </span> <!--&#10230 dấu suy ra nè -->
-                <p>Sản phẩm tìm kiếm:<?= $nuochoa['name']; ?> </p>
+                <p>Sản phẩm tìm kiếm: <span style="color: red;"><?= $nuochoa['name']; ?></span> </p>
                  <!-- <p>Tìm Kiếm</p> -->
             </div>
         </div>
