@@ -28,9 +28,9 @@ button:hover {
   color: #fff;
 }
 
-.space-between {
+/* .space-between {
   justify-content: space-between;
-}
+} */
 
 .container_header {
   width: 100%;
@@ -1237,10 +1237,10 @@ label {
   background: #fff;
   border: #0b0000 1px solid;
   color: #0b0000;
-  -webkit-transition: all 0.25s ease-out;
+  /* -webkit-transition: all 0.25s ease-out;
   -moz-transition: all 0.25s ease-out;
   -o-transition: all 0.25s ease-out;
-  -ms-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out; */
   transition: all 0.25s ease-out;
   display: inline-block;
   padding: 7px 30px;
@@ -1251,4 +1251,16 @@ label {
   line-height: 10px;
   font-weight: bold;
   text-transform: uppercase;
+}
+/* -----chỉnh sửa phần product slideshow */
+.product-views {
+  margin-top: 120px;
+}
+.title-products {
+  text-align: center;
+  font-size: 30px;
+  background: linear-gradient(90deg, #00ffff, #ff00c3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

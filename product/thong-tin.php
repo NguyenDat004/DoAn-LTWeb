@@ -18,10 +18,9 @@ if(isset($_POST['addcart'])) {
                 <div class="product-top row">
                    <a href="../index.php"><p>Trang chủ</p></a>
                     <span>&#10230; </span> 
-                    <p><?= $check['name']; ?></p>
+                    <p style="color:#800000;"><?= $check['name']; ?></p>
                 </div>
                 <div class="product-content row">
-                    <!--Left gôm những cái ảnh to và ảnh nhỏ-->
                     <div class="product-content-left">
                         <div class="product-content-left-big-img">
                             <img src="<?= $check['images']; ?>" alt="">

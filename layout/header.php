@@ -14,7 +14,7 @@
             <div class="container_header">
                 <div class="row">
                     <div class="top-logo">
-                       <a href="/htdocts/index.php"> <img src="" alt="" > </a>
+                       <a href="/htdocts/index.php"> <img src="./Logo.png" alt="" > </a>
                     </div>
                     <div class="top-menu-items">
                         <ul>

@@ -11,22 +11,16 @@ $nuochoa = mysqli_fetch_assoc(mysqli_query($conn,"SELECT * FROM `sub_category` W
             <div class="cartegory-top row">
                 <a href="../index.php"><p>Trang chủ</p></a>
                 <span>&#10230; </span> <!--&#10230 dấu suy ra nè -->
-                <p><?= $nuochoa['name']; ?> </p>
+                <p style="color: #800000;"><?= $nuochoa['name']; ?> </p>
             </div>
         </div>
         <div >
             <div class="row">        
-                    <!-- <div class="cartegory-right-top-item">
-                        <button><span>Bộ lọc</span> <i class="fas fa-sort-down"></i></button>
-                    </div> -->
-                    <div class="cartegory-right-content row">
-
-                      
+                    <div class="cartegory-right-content row">  
                     <?php
                     $query = mysqli_query($conn,"SELECT * FROM `product` WHERE `type` = '$type' ");
-                                while($row = mysqli_fetch_array($query)){
-                                ?>
-                            <div class="cartegory-right-content-item text-center">
+                         while($row = mysqli_fetch_array($query)){?>
+                        <div class="cartegory-right-content-item text-center">
                             <img src="<?= $row['images']; ?>" alt="">
                             <h1><?= $row['name']; ?></h1>
                             <br>
@@ -34,11 +28,8 @@ $nuochoa = mysqli_fetch_assoc(mysqli_query($conn,"SELECT * FROM `sub_category` W
                             <br>
                             <a href="/htdocts/product/thong-tin.php?sanpham=<?= $row['ckcode']; ?>"><button style="cursor:pointer" type="button" class="button_product">Mua ngay</button></a>
                         </div>
-
-                       <?php } ?>
-                    </div>
-                 
-                   
+                    <?php } ?>
+                    </div>     
                 </div>
             </div>
         </div>
